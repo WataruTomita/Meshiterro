@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :post_comments, only:[:create, :destroy]
   end
   # mypage_setting
-  resources :users, only: [:show]
+  resources :users, only: [:show, :edit, :update]
 end
